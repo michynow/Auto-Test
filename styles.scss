@@ -36,7 +36,7 @@ header{
         width:0;
         background-color:black;
         font-weight:bold;
-        font-size:1.7rem;
+        font-size:1.4rem;
         display:flex;
         z-index:1;
         position:relative;
@@ -270,7 +270,7 @@ footer{
     .offered-services{
         .services-image-container{
             top:-5%;
-            right:-30%;
+            right:-35%;
             .offered-services__bgimg{
                 img{
                     width:200px;
@@ -279,10 +279,10 @@ footer{
         }
     }
 }
-@media (max-width:568px){
+@media (min-width:420px) and (max-width:568px){
 .offered-services{
     .services-image-container{
-        right:-15%;
+        right:-20%;
         top:-5%;
         .offered-services__bgimg{
             img{
