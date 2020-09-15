@@ -29,7 +29,7 @@ function removeScroll(){
         if(width< 960){
         links.style.marginLeft = "-240px";
         }
-        
+    }
 menuBtn.addEventListener('click',openClose);
 //prevent scrolling when open
 function noScroll() {
