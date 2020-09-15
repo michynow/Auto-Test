@@ -21,6 +21,10 @@ body {
           flex-direction: column;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 header {
   background: #0593a1;
   display: -webkit-box;
@@ -43,7 +47,7 @@ header .navigation-menu {
   line-height: 2.5rem;
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
-  height: 200vh;
+  height: 100vh;
   width: 0;
   background-color: black;
   font-weight: bold;
@@ -221,7 +225,8 @@ main .landing-text-container .landing-text__call-to-action-btn:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   grid-gap: 2rem;
-  margin: 10%;
+  margin: 10% 10% 0 10%;
+  padding-bottom: 10%;
 }
 
 .range-of-services .range-of-services-container .range-of-services__item {
@@ -345,6 +350,26 @@ footer {
   margin-top: 2rem;
 }
 
+@media (max-width: 420px) {
+  .offered-services .services-image-container {
+    top: -5%;
+    right: -30%;
+  }
+  .offered-services .services-image-container .offered-services__bgimg img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 568px) {
+  .offered-services .services-image-container {
+    right: -15%;
+    top: -5%;
+  }
+  .offered-services .services-image-container .offered-services__bgimg img {
+    width: 200px;
+  }
+}
+
 @media (min-width: 568px) {
   body {
     font-size: 14px;
@@ -445,7 +470,7 @@ footer {
             transform: translateY(-100px);
   }
   body .range-of-services .range-of-services-container {
-    margin: 5%;
+    margin: 5% 5% 0 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
