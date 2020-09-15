@@ -9,7 +9,7 @@ const navLinkContact = document.querySelector('#navlink3');
 let width = window.innerWidth;
 function openClose(){
     if(menuOpen === false){
-        navigation.style.width = '45vw';
+        navigation.style.width = '55vw';
         links.style.marginLeft = "0px"
         menuOpen = true;
         window.addEventListener('scroll', noScroll);
@@ -29,7 +29,7 @@ function removeScroll(){
         if(width< 960){
         links.style.marginLeft = "-240px";
         }
-    }
+        
 menuBtn.addEventListener('click',openClose);
 //prevent scrolling when open
 function noScroll() {
