@@ -104,10 +104,7 @@ header{
   
     /*positioning of the logo */
     .logo-container{    
-        flex-grow: 1;
-        padding-right:$hamburgerDiv-size;
-        position:absolute;
-        left:40%;
+        margin: 0 auto;
         h3{
             color:white;
             font-weight:bold;
@@ -306,21 +303,11 @@ footer{
         background-image:url("images/car-repair-illustration-960.png");
         height:511px;
         }
-        header{
-            .logo-container{
-                left:44%;
-            }
-        }
 }
 //MQ for desktops
 @media (min-width:960px){
     body{
     font-size:18px;
-    header{
-        .logo-container{
-            left:46%;
-        }
-    }
     .navigation-menu{
         display:flex;
         height:auto;
@@ -350,13 +337,11 @@ footer{
         display:flex;
         flex-direction:row-reverse;
         .hero-ilustration-container{
-         min-height:360px;
          background-image:none;
          background-color:$primary-color;
          picture img{
              display:block;
-             height:auto;
-             max-width:50vw;
+             width:100%;
              transform:translate(-20px, -150px);
          }
         }
@@ -414,6 +399,29 @@ footer{
             .hero-ilustration-container{
                 picture img{
                     transform:translate(-20px,-210px);
+                }
+            }
+        }
+    }
+}
+@media(min-width:1900px){
+    body{
+        main{
+            .hero-ilustration-container{
+                picture img{
+                    transform:translate(-20px,-280px);
+                }
+            }
+        }
+    }
+}
+@media (min-width:2500px){
+    body{
+        font-size:2rem;
+        main{
+            .hero-ilustration-container{
+                picture img{
+                    display:none;
                 }
             }
         }
