@@ -143,12 +143,7 @@ header .navigation-menu .menu-btn .menu-btn__hamburger::after {
 }
 
 header .logo-container {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding-right: 80px;
-  position: absolute;
-  left: 40%;
+  margin: 0 auto;
 }
 
 header .logo-container h3 {
@@ -385,17 +380,11 @@ footer {
     background-image: url("images/car-repair-illustration-960.png");
     height: 511px;
   }
-  header .logo-container {
-    left: 44%;
-  }
 }
 
 @media (min-width: 960px) {
   body {
     font-size: 18px;
-  }
-  body header .logo-container {
-    left: 46%;
   }
   body .navigation-menu {
     display: -webkit-box;
@@ -440,14 +429,12 @@ footer {
             flex-direction: row-reverse;
   }
   body main .hero-ilustration-container {
-    min-height: 360px;
     background-image: none;
     background-color: #225971;
   }
   body main .hero-ilustration-container picture img {
     display: block;
-    height: auto;
-    max-width: 50vw;
+    width: 100%;
     -webkit-transform: translate(-20px, -150px);
             transform: translate(-20px, -150px);
   }
@@ -497,6 +484,22 @@ footer {
   body main .hero-ilustration-container picture img {
     -webkit-transform: translate(-20px, -210px);
             transform: translate(-20px, -210px);
+  }
+}
+
+@media (min-width: 1900px) {
+  body main .hero-ilustration-container picture img {
+    -webkit-transform: translate(-20px, -280px);
+            transform: translate(-20px, -280px);
+  }
+}
+
+@media (min-width: 2500px) {
+  body {
+    font-size: 2rem;
+  }
+  body main .hero-ilustration-container picture img {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
