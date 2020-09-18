@@ -38,8 +38,6 @@ header {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   height: 10vh;
-  position: -webkit-sticky;
-  position: sticky;
   /*positioning of the logo */
 }
 
@@ -56,7 +54,7 @@ header .navigation-menu {
   display: -ms-flexbox;
   display: flex;
   z-index: 1;
-  position: relative;
+  position: fixed;
 }
 
 header .navigation-menu .navigation-menu__list {
@@ -105,19 +103,25 @@ header .navigation-menu .menu-btn {
           align-items: center;
   width: 80px;
   height: 80px;
+  border: 1px solid transparent;
+  border-radius: 50px;
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   z-index: 9;
 }
 
+header .navigation-menu .menu-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 header .navigation-menu .menu-btn .menu-btn__hamburger {
   height: 0.2rem;
   width: 2rem;
-  background: white;
+  background: #f8c72b;
   border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   opacity: 0.9;
 }
 
@@ -126,10 +130,8 @@ header .navigation-menu .menu-btn .menu-btn__hamburger::before, header .navigati
   position: absolute;
   width: 2rem;
   height: 0.2rem;
-  background: white;
+  background: #f8c72b;
   border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
 }
 
 header .navigation-menu .menu-btn .menu-btn__hamburger::before {
@@ -390,6 +392,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     height: auto;
     font-size: 1rem;
     background-color: transparent;
